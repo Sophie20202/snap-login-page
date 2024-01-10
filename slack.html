@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="snap.css">
-    <title>Slack Login design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snap login page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        
-        <div class="img">
-            <div> </div>
-            <img src="./Vector.svg" alt="" class="Vector"> 
-        </div>  
-       <div class="body">
-         <div class="heading">
-             <h1>Welcome Back!</h1>
-             <input class="button" type="button" value="Log In via Google">
-             <p class="Logging">Trouble Logging In?</p>
-              <p>OR</p>
-              <form action="" method="post">
-              <div class="username">
-                <div class="input-data">
-                <input type="text" placeholder="USERNAME OR EMAIL">
-                <label></label>
-                </div>
-                 <div class="password">
-                    <input type="password" placeholder="PASSWORD">
-                    <label></label>
-                </div>
-                  </div>
-                <div class="forgot">
-                    <div></div>
-                  <p class="pass">forgot password?</p>
-                  
-               </div>
-                <input  class="login" type="submit" value="Log In">
-                 <p class="signup"><b><a href="#">sign up</a></b> 
-                  if you don't have an account</p>
-               </form>
-          </div>
-        </div>
-           
+<div class="center">
+  <h1>Login</h1>
+<form method="post">
+  <div class="txt_field">
+    <input type="text" required>
+    <span></span>
+    <label> username</label>
+  </div>
+  <div class="txt_field">
+    <input type="password" required>
+    <span></span>
+    <label>password</label>
+  </div>
+  <div class="pass">Forgot Password?</div>
+  <input type="submit" value="Login">
+  <div class="signup_link">
+     Not a member <a href="#">Signup</a>
     </div>
+</form>
+</div>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slack.css">
-    <title>Slack Login design</title>
+    <link rel="stylesheet" href="snap.css">
+    <title>Snap Login design</title>
 </head>
 <body>
     <div class="container">
@@ -18,30 +18,33 @@
              <h1>Welcome Back!</h1>
              <input class="button" type="button" value="Log In via Google">
              <p class="Logging">Trouble Logging In?</p>
-              <p>OR</p>
-              <form action="" method="post">
+              <p class="para">OR</p>
+              <form method="post">
               <div class="username">
-                <div class="input-data">
-                <input type="text" placeholder="USERNAME OR EMAIL">
-                <label></label>
-                </div>
-                 <div class="password">
-                    <input type="password" placeholder="PASSWORD">
-                    <label></label>
-                </div>
+                <div class="txt_field">
+                <input type="text" onchange="snap()" id="username" required>
+                <span></span>
+                <label> USERNAME OR EMAIL</label>
+              </div>
+              <div class="txt_field">
+                <input type="password" onchange="snap()"  id="password" required>
+                <span></span>
+                <label>PASSWORD</label>
+              </div>
                   </div>
                 <div class="forgot">
                     <div></div>
                   <p class="pass">forgot password?</p>
                   
                </div>
-                <input  class="login" type="submit" value="Log In">
+                <input  class="login" type="submit" value="Log In" id="login">
                  <p class="signup"><b><a href="#">sign up</a></b> 
-                 here if you don't have an account</p>
+                  if you don't have an account</p>
                </form>
           </div>
         </div>
            
     </div>
+    <script src="snap.js"></script>
 </body>
 </html>
